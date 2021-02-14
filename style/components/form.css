@@ -1,0 +1,53 @@
+.forma button {
+    font-style: normal;
+}
+
+.forma__label {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 13px;
+    width: 100%;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+.forma__input {
+    margin-top: 8px;
+    padding-bottom: 8px;
+}
+
+.forma__input::placeholder {
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+}
+
+.forma__input-black {
+    background-color: #131313;
+    border-bottom: 1px solid #5c5c5c;
+}
+
+.forma__input-black::placeholder {
+    color: white;
+}
+
+.forma__label-white {
+    color: rgba(54, 54, 54, 0.5);
+}
+
+.forma__label-black {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    .forma__label {
+        color: rgba(255, 255, 255, 0.5);
+        margin-right: 0px;
+    }
+}

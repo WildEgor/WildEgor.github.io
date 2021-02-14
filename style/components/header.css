@@ -1,0 +1,72 @@
+.header {
+    background-color: #131313;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 83px;
+    font-size: 11px;
+    padding: 0px 90px;
+}
+
+.header-logo {
+    color: #E3B873;
+}
+
+.header-telephone {
+    color: #E3B873;
+    text-decoration: underline;
+}
+
+.header-navigation {
+    color: #FFFFFF;
+}
+
+.header-navigation__item {
+    padding-left: 47px;
+}
+
+.header-navigation__link {
+
+}
+
+.header-navigation__link-active {
+    color: #E3B873;
+}
+
+.header-button {
+    padding: 13px 33px;
+}
+
+
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .header-container {
+        padding: 0px 10px;
+    }
+
+      .header-navigation {
+          display: none;
+      }
+
+      .header-button {
+        display: none;
+      }
+
+      .hero-buttons {
+          flex-direction: column;
+      }
+
+      footer {
+          display: none;
+      }
+}

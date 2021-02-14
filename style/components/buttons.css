@@ -1,0 +1,22 @@
+/*
+    BUTTONS
+*/
+.button {
+    padding: 13px 33px;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+    border-radius: 2px;
+    font-style: italic;
+    font-size: 11px;
+}
+
+.button-main {
+    background-color: #E3B873;
+    color: #FFFFFF;
+}
+
+.button-second {
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    box-shadow: none;
+}

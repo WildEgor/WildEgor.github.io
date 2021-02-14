@@ -1,0 +1,98 @@
+.fantasies {
+    position: relative;
+    background-image: url(/img/fantasies.png);
+    background-size: cover;
+    margin-bottom: 80px;
+}
+
+.fantasies-container {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    justify-content: space-between;
+    max-height: 864px;
+}
+
+.fantasies-overlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.fantasies-content {
+    padding: 80px 10px;
+}
+
+.fantasies-content__list {
+    font-size: 20px;
+    line-height: 2.55;
+    color: white;
+}
+
+.fantasies-content__item-active {
+    color: #E3B873;
+}
+
+.fantasies-content__list li:first-child > a {
+    border-bottom: 2px solid #E3B873;
+}
+
+.fantasies-gallery {
+    display: flex;
+}
+
+.fantasies-gallery__col-1 {
+    margin-top: -50px;
+}
+
+.fantasies-gallery__col-2 {
+    margin-top: -140px;
+}
+
+.fantasies-gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fantasies-gallery__item {
+    padding: 20px 0px 20px 20px;
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    .fantasies {
+        margin: 0px;
+        background-image: none;
+        background-color:#131313;
+    }
+
+      .fantasies-gallery, 
+      .fantasies-content__list {
+          display: none;
+      }
+    
+    .fantasies-content {
+        margin-top: -250px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .fantasies-content span {
+        color: white;
+    }
+
+    .fantasies-overlay {
+        display: none;
+    }
+
+}

@@ -1,0 +1,236 @@
+.repair {
+    margin-bottom: 180px;
+}
+
+.repair-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.repair-types {
+    display: flex;
+    width: 100%;
+}
+
+.repair-types__content {
+    background-color: white;
+    padding: 25px 30px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+    padding-bottom: 0;
+}
+
+.repair-types__item button {
+    padding: 17px 21px;
+    font-family: 'Yeseva One';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.repair-types__content h4 {
+    text-transform: none;
+    margin-bottom: 13px;
+}
+
+.repair-types__content ul {
+    list-style: disc;
+    line-height: 2;
+    padding-bottom: 50px;
+    padding-left: 18px;
+    color: rgba(54, 54, 54, 0.5);
+    margin-bottom: -10px;
+}
+
+.repair-types__content ul > li {
+    font-size: 13px;
+}
+
+.repair-types__item button {
+    margin-top: -80px;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+}
+
+.repair-types__item {
+    width: 33%;
+    padding: 250px 30px 10px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.repair-types__item-1 {
+    background-image: url(../../img/slide1.png);
+}
+
+.repair-types__item-2 {
+    background-image: url(../../img/slide2.png);
+}
+
+.repair-types__item-3 {
+    background-image: url(../../img/slide3.png);
+}
+
+.repair-container-image {
+    background-image: url("../../img/screen3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.repair-feedback {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 100px;
+    margin-top: 120px;
+}
+
+.repair-feedback__features {
+    width: 50%;
+    padding-left: 40px;
+}
+
+.repair-feedback__item:not(:last-child) {
+    margin-bottom: 120px;
+}
+
+.repair-feedback__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.repair-feedback__item p {
+    line-height: 1.15;
+}
+
+.repair-feedback__circle {
+    position: relative;
+    border-radius: 50%;
+    border: 10px solid white;
+    display: inline-block;
+    padding: 0;
+    margin-right: 10px;
+    line-height: 65px;
+    width: 65px;
+    height: 65px;
+}
+
+.repair-feedback__circle-borderless {
+    border: none;
+    width: 72px;
+    height: 72px;
+}
+
+.repair-feedback__circle img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.repair-feedback__circle span {
+    font-family: 'Yeseva One';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.repair-feedback__form {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%;
+    padding: 30px 55px;
+}
+
+.repair-feedback__subtitle {
+    text-align: center;
+    color: white;
+}
+
+.repair-feedback__form label {
+    margin-top: 50px;
+}
+
+.repair-feedback__form .first-checkbox {
+    margin-top: 20px;
+}
+
+.repair-feedback__form button {
+    display:block;
+    float:right;
+    text-align:center;
+    font-style: normal;
+    margin-top: 50px;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 25px 22px;
+    margin-left: 300px;
+}
+
+.repair-feedback__help {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+.repair-feedback__help-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+      .repair {
+        margin: 0px;
+      }
+
+      .repair-types {
+          flex-direction: column;
+          padding: 0px 15px 0px 15px;
+      }
+
+      .repair-types__item {
+          width: 100%;
+          padding-left: 0px;
+      }
+
+      .repair-feedback__features,
+      .repair-feedback__help,
+      .repair-feedback__form {
+          display: none;
+      }
+
+      .repair-feedback {
+          padding-left: 0;
+      }
+
+      .repair-feedback__form button {
+          margin: 0;
+      }
+
+}
+
+@media (min-width: 320px) and (max-width: 1440px) { 
+
+    .repair-types__content ul > li {
+        line-height: calc(22px + (26 - 22 * ( (100vw - 320px) / ( 1440 - 320) ));
+    }
+}
+
+
+

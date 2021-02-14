@@ -1,0 +1,39 @@
+.first-checkbox {
+    font-size: 14px;
+}
+
+.checkbox{
+    display: none;
+}
+
+.first-checkbox .label {
+    display: flex;
+    width: 100%;
+}
+
+.first-checkbox .text, .text-black {
+    margin-left: 10px;
+}
+
+.first-checkbox .text-black {
+    color:white;
+}
+
+.fake{
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    color: #fff;
+    justify-content: center;
+}
+
+.fake::before{
+    content:"\2714";
+    opacity: 0;
+    transition: .2s;
+}
+
+.checkbox:checked + .fake::before{
+    opacity: 1;
+}

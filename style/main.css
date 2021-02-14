@@ -1,0 +1,201 @@
+@import "../style/common/normalize.css";
+@import "../style/components/header.css";
+@import "../style/components/hero.css";
+@import "../style/components/buttons.css";
+@import "../style/components/projects.css";
+@import "../style/components/online.css";
+@import "../style/components/checkbox.css";
+@import "../style/components/repair.css";
+@import "../style/components/fantasies.css";
+@import "../style/components/clients.css";
+@import "../style/components/questions.css";
+@import "../style/components/form.css";
+/*
+    FONTS
+*/
+/* latin */
+@font-face {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/yesevaone/v15/OpNJno4ck8vc-xYpwWWxli1VWw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+/* latin */
+@font-face {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v6/pe0qMImSLYBIv1o4X1M8cce9I9s.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    font-style: bold;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v6/pe03MImSLYBIv1o4X1M8cc8GBs5tU1E.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v6/pe0oMImSLYBIv1o4X1M8cce4E9lKdg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/*
+    COMMON STYLES
+*/
+html, body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+section  {
+    width: 100%;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.accent-color {
+    color: #E3B873;
+}
+
+.accent-color-bg {
+    background-color: #E3B873;
+}
+
+.second-color {
+    color: #FFF;
+}
+
+.title {
+    margin: 0;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 20px 0px 20px;
+}
+
+.subtitle {
+    margin: 0;
+    font-family: 'Nunito Sans';
+    font-size: 18px;
+    line-height: 1.75;
+    font-style: normal;
+    font-weight: normal;
+    padding: 20px 0px 20px;
+}
+
+img  {
+    max-width: 100%;
+}
+
+label {
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Yeseva One', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #181818;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 54px;
+}
+
+h2 {
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+h4 {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+p {
+    font-family:'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 2.15;
+    color: #181818;
+}
+
+header, footer {
+    background-color: #131313;
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+nav > ul {
+    display: flex;
+}
+
+hr {
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 320px) and (max-width: 1440px) {
+    h1 {
+      font-size: calc(23px + (40 - 27) * ( (100vw - 320px) / ( 1440 - 320) ));
+      line-height: calc(30px + (54 - 30) * ( (100vw - 320px) / ( 1440 - 320) ));
+    }
+    
+    h2 {
+        font-size: calc(22px + (27 - 22) * ( (100vw - 320px) / ( 1440 - 320) ));
+        line-height: calc(37px + (37 - 30) * ( (100vw - 320px) / ( 1440 - 320) ));
+    }
+
+    h3 {
+        font-size: calc(18px + (22 - 18) * ( (100vw - 320px) / ( 1440 - 320) ));
+        line-height: calc(25px + (28 - 25) * ( (100vw - 320px) / ( 1440 - 320) ));
+    }
+
+    p {
+        font-size: calc(11px + (22 - 11) * ( (100vw - 320px) / ( 1440 - 320) ));
+        line-height: calc(19px + (36 - 19) * ( (100vw - 320px) / ( 1440 - 320) ));
+    }
+
+    h4 {
+        font-size: calc(15px + (18 - 15) * ( (100vw - 320px) / ( 1440 - 320) ));
+        line-height: calc(14px + (18 - 14) * ( (100vw - 320px) / ( 1440 - 320) ));
+    }
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+      br {
+          display: none;
+      }
+   }

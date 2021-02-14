@@ -1,0 +1,115 @@
+.questions {
+    background-image: url(/img/footer.png);
+    background-color: #131313;
+}
+
+.questions-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px 0 10px;
+}
+
+.questions__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 120px;
+    width: 50%;
+    background-color: #131313;
+    margin-top: -150px;
+    margin-bottom: 20px;
+    height: 400px;
+}
+
+.questions__form label:not(:first) {
+    margin-right: 0;
+}
+
+.questions__form button {
+    padding: 18px 54px;
+}
+
+.questions__form-row {
+    display: flex;
+    width: 100%;
+
+}
+
+.questions__icon-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.questions__icon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.questions__icon img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.questions__map {
+    margin-bottom: 50px;
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    .questions {
+        background-image: none;
+    }
+
+      .questions-container {
+          padding-bottom: 0px;
+          flex-flow: wrap;
+      }
+
+      .questions__map {
+          height: 30vh;
+          padding-left: 20px;
+          padding-right: 20px;
+          margin-bottom: 20px;
+      }
+
+      .questions__form {
+          order: 1;
+          margin: 0px;
+          padding: 0px;
+          align-items: stretch;
+          margin-bottom: 50px;
+          width: 100%;
+      }
+
+      .questions__map {
+          order: 2;
+      }
+
+      .questions__title {
+          order: 3;
+      }
+
+      .questions__icon-wrapper {
+          order: 4;
+      }
+
+      .questions__form-row {
+          flex-direction: column;
+      }
+}

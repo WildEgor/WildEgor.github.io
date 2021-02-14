@@ -1,0 +1,94 @@
+.clients {
+    margin-bottom: 300px;
+}
+
+.clients-container {
+    text-align: center;
+}
+
+.clients-button {
+    display: flex;
+    width: 80%;
+    padding: 0;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-family: 'Yeseva One';
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.clients-button__left {
+    border-right: 2px solid white;
+}
+
+.clients-button__left span, .clients-button__right span {
+    margin-left: 10px;
+}
+
+
+.clients-button div {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    width: 50%;
+}
+
+.clients-feedbacks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients-feedbacks__item {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.clients-feedbacks__item button {
+    margin-right: 100px;
+    margin-top: -80px;
+}
+
+.clients-feedbacks__item:not(:last-child) {
+    margin-right: 54px;
+}
+
+.clients-feedbacks__content {
+    box-shadow: 15px -5px 15px rgba(0, 0, 0, 0.03);
+    margin-bottom: 50px;
+    text-align: left;
+    padding: 20px 20px 60px 20px
+}
+
+.clients-feedbacks__intro {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.clients-feedbacks__intro img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.clients-feedbacks__intro h3 {
+    text-transform: none;
+}
+
+
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+      .clients {
+          display: none;
+      }
+}
