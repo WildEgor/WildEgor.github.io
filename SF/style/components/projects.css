@@ -82,7 +82,7 @@
 .project-slider {
     display: none;
     position: relative;
-    background-image: url(/img/project-slider.png);
+    background-image: url(../../img/project-slider.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
