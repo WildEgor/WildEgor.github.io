@@ -162,7 +162,7 @@ hr {
     padding: 0;
 }
 
-@media (min-width: 320px) and (max-width: 1440px) {
+@media (min-width: 320px) and (max-width: 1024px) {
     h1 {
       font-size: calc(23px + (40 - 27) * ( (100vw - 320px) / ( 1440 - 320) ));
       line-height: calc(30px + (54 - 30) * ( (100vw - 320px) / ( 1440 - 320) ));

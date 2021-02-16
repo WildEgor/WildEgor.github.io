@@ -66,7 +66,7 @@
 /* Portrait */
 @media only screen 
   and (min-device-width: 320px) 
-  and (max-device-width: 568px)
+  and (max-device-width: 768px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
@@ -85,6 +85,7 @@
         margin-top: -250px;
         padding-bottom: 20px;
         text-align: center;
+        width: 100%;
     }
 
     .fantasies-content span {
