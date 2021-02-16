@@ -1,6 +1,6 @@
 .fantasies {
     position: relative;
-    background-image: url(/img/fantasies.png);
+    background-image: url(../../img/fantasies.png);
     background-size: cover;
     margin-bottom: 80px;
 }

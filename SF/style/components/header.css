@@ -40,8 +40,6 @@
     padding: 13px 33px;
 }
 
-
-
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 
 /* Portrait */
@@ -69,4 +67,11 @@
       footer {
           display: none;
       }
+}
+
+@media (min-width: 320px) and (max-width: 1024px) { 
+    .header-container {
+        padding: 0px 5px;
+    }
+    
 }

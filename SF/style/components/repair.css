@@ -21,7 +21,7 @@
     padding-bottom: 0;
 }
 
-.repair-types__item button {
+.repair-types__item .repair-types__button {
     padding: 17px 21px;
     font-family: 'Yeseva One';
     font-size: 18px;
@@ -84,13 +84,13 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding-left: 100px;
+    padding-left: 60px;
     margin-top: 120px;
 }
 
 .repair-feedback__features {
     width: 50%;
-    padding-left: 40px;
+    padding-left: 10px;
 }
 
 .repair-feedback__item:not(:last-child) {
@@ -167,14 +167,14 @@
 
 .repair-feedback__form button {
     display:block;
-    float:right;
     text-align:center;
     font-style: normal;
-    margin-top: 50px;
+    width: 45%;
+    align-self: flex-end;
+    margin-top: 25px;
     font-size: 13px;
     text-transform: uppercase;
     padding: 25px 22px;
-    margin-left: 300px;
 }
 
 .repair-feedback__help {
@@ -187,6 +187,7 @@
 .repair-feedback__help-wrapper {
     display: flex;
     align-items: center;
+    padding-right: 10px;
 }
 
 /* Portrait */

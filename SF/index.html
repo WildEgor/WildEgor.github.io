@@ -18,12 +18,12 @@
             </span>
             <nav>
                 <ul class="header-navigation">
-                    <li class="header-navigation__item"><a class="header-navigation__link header-navigation__link-active">HOME</a></li>
-                    <li class="header-navigation__item"><a class="header-navigation__link">PROJECTS</a></li>
-                    <li class="header-navigation__item"><a class="header-navigation__link">MEASUREMENT</a></li>
-                    <li class="header-navigation__item"><a class="header-navigation__link">TEAM</a></li>
-                    <li class="header-navigation__item"><a class="header-navigation__link">REVIEWS</a></li>
-                    <li class="header-navigation__item"><a class="header-navigation__link">CONTACTS</a></li>
+                    <li class="header-navigation__item"><a class="header-navigation__link header-navigation__link-active" href="#home">HOME</a></li>
+                    <li class="header-navigation__item"><a class="header-navigation__link" href="#projects">PROJECTS</a></li>
+                    <li class="header-navigation__item"><a class="header-navigation__link" href="#measurements">MEASUREMENT</a></li>
+                    <li class="header-navigation__item"><a class="header-navigation__link" href="#">TEAM</a></li>
+                    <li class="header-navigation__item"><a class="header-navigation__link" href="#clients">REVIEWS</a></li>
+                    <li class="header-navigation__item"><a class="header-navigation__link" href="#questions">CONTACTS</a></li>
                 </ul>
             </nav>
             <span class="header-telephone">
@@ -34,7 +34,7 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section id="home" class="hero">
             <div class="container hero-container">
                 <h1 class="hero-title title second-color"> Turnkey Repair in the </br>city of <span class="accent-color">Rostov-on-Don</span> </h1>
                 <p class="hero-content">
@@ -49,7 +49,7 @@
             <div class="hero-overlay"></div>
         </section>
 
-        <section class="projects">
+        <section id="projects" class="projects">
             <div class="container projects-container">
                 <div class="projects-content">
                     <h2 class="title accent-color"> Completed </br>projects </h2>
@@ -106,7 +106,7 @@
             </div>
         </section>
 
-        <section class="online">
+        <section id="online" class="online">
             <div class="container online-container">
                 <h3 class="title online-title"> online control </h3>
                 <div class="icon-container">
@@ -155,7 +155,7 @@
             </div>
         </section>
 
-        <section class="repair">
+        <section id="repair" class="repair">
             <div class="container repair-container">
                 <h3 class="title repair-title"> TYPES OF REPAIR </h3>
                 <div class="icon-container">
@@ -177,7 +177,7 @@
                                 <li> Replacing doors </li>
                             </ul>
                         </div>
-                        <button class="button button-main"> from 900 rub / m2 </button>
+                        <span class="repair-types__button button button-main"> from 900 rub / m2 </span>
                     </div>
                     <div class="repair-types__item repair-types__item-2">
                         <div class="repair-types__content">
@@ -192,7 +192,7 @@
                                 <li> Replacing doors </li>
                             </ul>
                         </div>
-                        <button class="button button-main"> from 1800 rub / m2 </button>
+                        <span class="repair-types__button button button-main"> from 1800 rub / m2 </span>
                     </div>
                     <div class="repair-types__item repair-types__item-3">
                         <div class="repair-types__content">
@@ -207,10 +207,10 @@
                                 <li> Replacing doors </li>
                             </ul>
                         </div>
-                        <button class="button button-main"> from 4000 rub / m2 </button>
+                        <span class="repair-types__button button button-main"> from 4000 rub / m2 </span>
                     </div>
                 </div>
-                <div class="repair-feedback repair-container-image">
+                <div id="measurements" class="repair-feedback repair-container-image">
                     <div class="repair-feedback__features">
                         <div class="repair-feedback__item">
                             <div class="repair-feedback__circle button-main button">
@@ -283,7 +283,7 @@
             </div>
         </section>
 
-        <section class="fantasies">
+        <section id="fantasies" class="fantasies">
             <div class="container fantasies-container">
                 <div class="fantasies-content">
                     <h2 class="title accent-color">We realize your</br>
@@ -356,7 +356,7 @@
             <div class="fantasies-overlay"></div>
         </section>
 
-        <section class="clients">
+        <section id="clients" class="clients">
             <div class="container clients-container">
                 <h3 class="title clients-title"> our clients </h3>
                 <div class="icon-container">
@@ -387,7 +387,7 @@
                                     Quality satisfied. Prices democratic. I recommend these masters.
                                 </p>
                         </div>
-                        <button class="clients-button button button-main">
+                        <div class="clients-button button button-main">
                             <div class="clients-button__left">
                                 <img src="./img/icons/area.svg">
                                 <span> 40 m2 </span>
@@ -396,7 +396,7 @@
                                 <img src="./img/icons/duration.svg">
                                 <span> 48 DAYS </span>
                             </div>
-                        </button>
+                        </div>
                     </div>
                     <div class="clients-feedbacks__item clients-feedbacks__item-2">
                         <div class="clients-feedbacks__content">
@@ -414,7 +414,7 @@
                                     Quality satisfied. Prices democratic. I recommend these masters.
                                 </p>
                         </div>
-                        <button class="clients-button button button-main">
+                        <div class="clients-button button button-main">
                             <div class="clients-button__left">
                                 <img src="./img/icons/area.svg">
                                 <span> 90 м2 </span>
@@ -423,7 +423,7 @@
                                 <img src="./img/icons/duration.svg">
                                 <span> 128 DAYS </span>
                             </div>
-                        </button>
+                        </div>
                     </div>
                     <div class="clients-feedbacks__item clients-feedbacks__item-3">
                         <div class="clients-feedbacks__content">
@@ -442,7 +442,7 @@
                                     I recommend these masters.
                                 </p>
                         </div>
-                        <button class="clients-button button button-main">
+                        <div class="clients-button button button-main">
                             <div class="clients-button__left">
                                 <img src="./img/icons/area.svg">
                                 <span> 56 м2 </span>
@@ -451,13 +451,13 @@
                                 <img src="./img/icons/duration.svg">
                                 <span> 86 DAYS </span>
                             </div>
-                        </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="questions">
+        <section id="questions" class="questions">
             <div class="container questions-container">
                 <form class="questions__form">
                     <h3 class="title second-color">
@@ -499,19 +499,19 @@
             </div>
         </section>
 
-        <footer class="header">
+        <footer id="footer" class="header">
             <div class="container header-container">
                 <span class="header-logo">
                     IC "Repair Design Project"
                 </span>
                 <nav>
                     <ul class="header-navigation">
-                        <li class="header-navigation__item"><a class="header-navigation__link header-navigation__link-active">HOME</a></li>
-                        <li class="header-navigation__item"><a class="header-navigation__link">PROJECTS</a></li>
-                        <li class="header-navigation__item"><a class="header-navigation__link">MEASUREMENT</a></li>
-                        <li class="header-navigation__item"><a class="header-navigation__link">TEAM</a></li>
-                        <li class="header-navigation__item"><a class="header-navigation__link">REVIEWS</a></li>
-                        <li class="header-navigation__item"><a class="header-navigation__link">CONTACTS</a></li>
+                        <li class="header-navigation__item"><a class="header-navigation__link header-navigation__link-active" href="#">HOME</a></li>
+                        <li class="header-navigation__item"><a class="header-navigation__link" href="#">PROJECTS</a></li>
+                        <li class="header-navigation__item"><a class="header-navigation__link" href="#">MEASUREMENT</a></li>
+                        <li class="header-navigation__item"><a class="header-navigation__link" href="#">TEAM</a></li>
+                        <li class="header-navigation__item"><a class="header-navigation__link" href="#">REVIEWS</a></li>
+                        <li class="header-navigation__item"><a class="header-navigation__link" href="#">CONTACTS</a></li>
                     </ul>
                 </nav>
                 <span class="header-telephone">
