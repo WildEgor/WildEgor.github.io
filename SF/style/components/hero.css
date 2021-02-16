@@ -69,19 +69,23 @@
 }
 
 @media (min-width: 320px) and (max-width: 1024px) {
-
     .hero-container {
-        padding: 0 10px;
-    }
-
-    .hero-title.title  {
-        padding: 60px 0 20px 0;
+        justify-content: space-around;
     }
 
     .hero-content {
       font-size: calc(14px + (36 - 14) * ( (100vw - 320px) / ( 1440 - 320) ));
       line-height: calc(25px + (36 - 25) * ( (100vw - 320px) / ( 1440 - 320) ));
     }
+}
+
+@media (min-width: 321px) and (max-width: 1024px) {
+    .hero-container {
+        padding: 0 10px;
+        justify-content: space-around;
+    }
     
-    
+    .hero-title.title  {
+        padding: 60px 0 20px 0;
+    }
 }
