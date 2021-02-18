@@ -89,20 +89,24 @@ class Equip {
         let diffInMilliSeconds = Math.abs(dateFuture - Date.now()) / 1000;
         this.workHours += Math.floor(diffInMilliSeconds / 3600) % 24;
         this.powerConsumption = this.workHours * this.power / 1000
+        return this
     }
 
     turn (futureDate) {
         this.isPlug = !this.isPlug;
         if (!this.isPlug) 
             this.powerConsumptionCalc.call(this, futureDate.setHours(Math.floor(Math.random()*10 + 1)))
+        return this
     }
 
     getPlagInStatus () {
         this.isPlug? console.log(`${this.name} Turn On`) : console.log(`${this.name} Turn Off`)
+        return this
     }
 
     getPowerConsumptionInfo () {
         console.log(`${this.name} - summary power consumption info -> ${this.powerConsumption} kW/h, ${this.power} W, ${this.workHours} h`)
+        return this
     }
 }
 

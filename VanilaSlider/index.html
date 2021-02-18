@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IC "Repair Design Project"</title>
+    <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+
+<body>
+    <main>
+
+        <div class="intro">
+            <h1>Vanilla JS Responsive Infinite Slider with Navigation</h1>
+            <p>Pure javascript animation <br> (Inspired by <a href="https://output.jsbin.com/ufoceq/8/">this</a> jQuery example)</p>
+          </div>
+          <div id="categorySlider" class="slider">
+                  <div class="slider__viewport">
+                    <ul class="slider__slides slide-list js-slide-list" style ="left: -100%"> 
+                      <li class="slide-list__item js-slide-list-item" data-slide-index="0">
+                        <div class="slide-list__content-area">Custom HTML Slide 1</div>
+                      </li>
+                      <li class="slide-list__item js-slide-list-item" data-slide-index="1">
+                        <div class="slide-list__content-area">Custom HTML Slide 2</div>
+                        <!--<img class="slide-list__image" src="http://placehold.it/600X300/666666">-->
+                      </li>
+                      <li class="slide-list__item js-slide-list-item" data-slide-index="2">
+                        <div class="slide-list__content-area">Custom HTML Slide 3</div>
+                      </li>
+                      <li class="slide-list__item js-slide-list-item" data-slide-index="3">
+                        <div class="slide-list__content-area">Custom HTML Slide 4</div>
+                        <!--<img class="slide-list__image" src="http://placehold.it/600X300/222222">-->
+                      </li>
+                      <li class="slide-list__item js-slide-list-item" data-slide-index="4">
+                        <div class="slide-list__content-area">Custom HTML Slide 5</div>
+                        <!--<img class="slide-list__image" src="http://placehold.it/600X300/222222">-->
+                      </li>
+                       <li class="slide-list__item js-slide-list-item" data-slide-index="5">
+                        <div class="slide-list__content-area">Custom HTML Slide 6</div>
+                        <!--<img class="slide-list__image" src="http://placehold.it/600X300/222222">-->
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="slider__controls">
+                    <button type="button" data-direction="prev" class="js-arrow-button slider__button slider__button--prev "><</button>
+                    <button type="button" data-direction="next " class="js-arrow-button slider__button slider__button--next">></button>
+                      <div class="slider-pager">
+                        <button class="slider-pager__item js-pager-item" type="button" data-slide-index="0">1</button>
+                        <button class="slider-pager__item js-pager-item" type="button" data-slide-index="1">2</button>
+                        <button class="slider-pager__item js-pager-item" type="button" data-slide-index="2">3</button>
+                        <button class="slider-pager__item js-pager-item" type="button" data-slide-index="3">4</button>
+                        <button class="slider-pager__item js-pager-item" type="button" data-slide-index="4">5</button>
+                        <button class="slider-pager__item js-pager-item" type="button" data-slide-index="5">6</button>
+                      </div>
+                  </div>
+            </div>          
+
+        <!-- <section id="projects" class="projects">
+            <div class="container projects-container">
+                <div class="projects-content">
+                    <h2 class="title accent-color"> Completed </br>projects </h2>
+                    <p class="second-color">
+                        Only a small part of the work performed by our company is presented </br>on the site. For 14 years on in the construction </br> 
+                        market we have made happy more than 1000 families
+                    </p>
+                    <div class="project-slider">
+                        <div class="project-slider__navigation">
+                            <div class="project-slider__button accent-color-bg">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                            <div class="project-slider__button accent-color-bg">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects-city">
+                        <div class="projects-city__item">
+                            <h4 class="projects-city__subtitle accent-color"> City: </h4>
+                            <span> Rostov-on-Don</br>LCD admiral </span>
+                        </div>
+                        <div class="projects-city__item">
+                            <h4 class="projects-city__subtitle accent-color"> Apartment area: </h4>
+                            <span> 81 m2 </span>
+                        </div>
+                        <div class="projects-city__item">
+                            <h4 class="projects-city__subtitle accent-color"> Repair time: </h4>
+                            <span> 3.5 months </span>
+                        </div>
+                        <div class="projects-city__item">
+                            <h4 class="projects-city__subtitle accent-color"> Repair Cost: </h4>
+                            <span> Upon request </span>
+                        </div>
+                        <div class="scroll">
+                            <span class="arrow leftArrow"></span><br>
+                            <ul class="scroll__dots">
+                                <li class="scroll__dot scroll__dot-active"></li>
+                                <li class="scroll__dot"></li>
+                                <li class="scroll__dot"></li>
+                            </ul>
+                            <span class="arrow rightArrow"></span><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-preview">
+                    <ul class="projects-navigation">
+                        <li class="projects-navigation__item"><a class="projects-navigation__link" href=""> ROSTOV-ON-DON, ADMIRAL </a></li>
+                        <li class="projects-navigation__item"><a class="projects-navigation__link" href=""> SOCHI THIEVES </a></li>
+                        <li class="projects-navigation__item"><a class="projects-navigation__link" href=""> ROSTOV-ON-DON PATRIOTIC </a></li>
+                    </ul>
+                    <img class="project-image" src="./img/screen2.png">
+                </div>
+            </div>
+        </section> -->
+
+    </main>
+
+    <script async type="module" src="./js/index.js"></script>
+</body>
+</html>
