@@ -66,11 +66,19 @@ function PC (name, model, power) {
 Lamp.prototype = Object.create(Equipment.prototype);
 PC.prototype = Object.create(Equipment.prototype);
 
+Lamp.prototype.changeColor = function (newColor) {
+    let self = this.color
+    this.color = newColor;
+    console.log(`Color was changed from ${self} to ${this.color}`)
+}
+
 let lamp = new Lamp('Lamp', 'red', 50)
 let pc = new PC('PC', 'gaming', 500)
 
 lamp.turn();
 pc.turn();
+
+lamp.changeColor('white');
 
 lamp.turn(new Date());
 pc.turn(new Date());
