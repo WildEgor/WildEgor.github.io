@@ -28,14 +28,62 @@ const xmlString = `
 </list>
 `
 
-const xmlDOM = XMLParser.parseFromString(xmlString, 'text/xml')
+class XMLDomParser {
+	
+	constructor (xml) {
+		this.xml = xml
+	}
+	
+	parse (xml) {
+		const parser = new DOMParser()
+		const dom = parser.parseFromString(this.xml, "application/xml")
+		return this.convertNodes(dom)		
+	}
+	
+	/*
+	** Recursively go through the node tree and convert each node to an object property
+	** @params DOM Node
+	** @return {Object}
+	*/
+	convertNodes (node) {
+		let tempObject = {}
+		let textContent = ""
+		
+		for (let item of node.childNodes) {
+			let nodeName = item.nodeName.toLowerCase()
+			let nodeType = item.nodeType
+			
+			// Element Node
+			if (nodeType === 1) {
+				let nodeContent = this.convertNodes(item)					
+				if (tempObject.hasOwnProperty(nodeName)) {
+					if (tempObject[nodeName].constructor !== Array) { 
+						tempObject[nodeName] = [tempObject[nodeName]]
+					}
+					tempObject[nodeName].push(nodeContent)
+				} else {
+					tempObject[nodeName] = nodeContent
+				}
+			}
+			
+			// Text Node
+			if (nodeType === 3) {
+				textContent = item.nodeValue.trim()
+			}
+			
+			if (textContent) {
+				tempObject = textContent
+			}
+		}
 
-const nodes = xmlDOM.querySelectorAll('*')
-
-for (var i = 0; i < nodes.length; i++) {
-    var text = null;
-    if (nodes[i].childNodes.length == 1 && nodes[i].childNodes[0].nodeType == 3) 
-        text = nodes[i].textContent; 
-    console.log("TageName : ", nodes[i].tagName, ", Text : ", text);
+		
+		return tempObject
+	}
 }
+
+window.addEventListener('load', () => {
+	const xmlParser = new XMLDomParser(xmlString)
+	const parsedXml = JSON.stringify(xmlParser.parse(), null, 4)
+	console.log(parsedXml);
+})
 
