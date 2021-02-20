@@ -34,6 +34,7 @@
 }
 
 .slider__button {
+  height: 50px;
   font-size: 2rem;
   background: none;
   border: none;
@@ -93,12 +94,8 @@
 
 .slider-pager__item {
   border: none;
-  border-radius: 50%;
-  width: 2rem;
-  line-height: 2rem;
-  padding: 0;
-  margin: 0 5px;
-  background-color: #fff;
+  cursor: pointer;
+  margin-right: 20px;
 }
 
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
