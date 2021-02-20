@@ -13,12 +13,7 @@
 
 .projects-preview {
     width: 60%;
-    margin-left: 10px;
-}
-
-.projects-preview img {
-    width: 680px;
-    height: 480px;
+    margin-left: 50px;
 }
 
 .projects-content {
@@ -74,7 +69,9 @@
 }
 
 .projects-navigation__link {
+    background-color: inherit;
     width: 100%;
+    color:white;
 }
 
 .project-slider {
@@ -121,12 +118,9 @@
     margin: 0 15px;
 }
 
-.scroll__dot-active {
+.scroll__dots button.active {
     color: rgba(255, 255, 255, 1);
     /* Active dot */
-    background-color: rgba(255, 255, 255, 1);
-
-    /* Inactive dot */
     background-color: rgba(255, 255, 255, 1);
 }
 

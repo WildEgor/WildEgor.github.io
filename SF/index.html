@@ -154,9 +154,9 @@
                         <div id="categorySliderScroll" class="slider__controls js-slider-buttonscontrols">
                             <button type="button" data-direction="prev" class="js-arrow-button slider__button slider__button--prev "><span class="arrow leftArrow"></span></button>
                             <ul class="scroll__dots">
-                                <li class="scroll__dot scroll__dot-active"></li>
-                                <li class="scroll__dot"></li>
-                                <li class="scroll__dot"></li>
+                                <li><button class="scroll__dot scroll__dot-active js-dot-buttons" data-slide-index="0"></button></li>
+                                <li><button class="scroll__dot js-dot-buttons" data-slide-index="1"></button></li>
+                                <li><button class="scroll__dot js-dot-buttons" data-slide-index="2"></button></li>
                             </ul>
                             <button type="button" data-direction="next" class="js-arrow-button slider__button slider__button--next"><span class="arrow rightArrow"></span></button>
                         </div>
@@ -174,13 +174,19 @@
                         <div class="slider__viewport">
                             <ul class="slider__slides slide-list js-slide-list" style ="left: -100%"> 
                                 <li class="slide-list__item js-slide-list-item" data-slide-index="0">
-                                    <img class="slide-list__image" src="http://placehold.it/100X100/222222">
+                                    <div class="slide-list__wrapper">
+                                        <img class="slide-list__image" src="./img/slider1.png">
+                                    </div>
                                 </li>
                                 <li class="slide-list__item js-slide-list-item" data-slide-index="1">
-                                    <img class="slide-list__image" src="http://placehold.it/200X200/666666">
+                                    <div class="slide-list__wrapper">
+                                        <img class="slide-list__image" src="./img/slider2.png">
+                                    </div>
                                 </li>
                                 <li class="slide-list__item js-slide-list-item" data-slide-index="2">
-                                    <img class="slide-list__image" src="http://placehold.it/300X300/222222">
+                                    <div class="slide-list__wrapper">
+                                        <img class="slide-list__image" src="./img/slider3.png">
+                                    </div>
                                 </li>
                             </ul>
                         </div>

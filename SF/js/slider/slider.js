@@ -27,10 +27,6 @@ Slider.prototype = {
     this.showCurrentContent(this.current);
   },
 
-  getCurrentSliderIndex: function () {
-
-  },
-
   checkNav: function () {
     var self = this; // Копируем контекст 
     if (self.sliderScroll.getElementsByClassName('js-arrow-button').length)
@@ -39,26 +35,36 @@ Slider.prototype = {
       this.pagerItems = self.sliderPager.getElementsByClassName('js-pager-item'); // Перемещение через ссылки
     if (self.sliderContent.getElementsByClassName('js-content-item').length)
       this.showContent = self.sliderContent.querySelectorAll('.js-content-item')
+    if (self.sliderScroll.getElementsByClassName('js-dot-buttons').length)
+      this.dotButtons = self.sliderScroll.querySelectorAll('.js-dot-buttons')
   },
   // Функция навешивает eventHandler-ы 
   listenEvents : function(){
     var self = this; // Копируем контекст 
     if (self.hasOwnProperty('arrowButtons')) {
-      for (var i = 0; i < this.arrowButtons.length; i++) {
+      for (let i = 0; i < this.arrowButtons.length; i++) {
         this.arrowButtons[i].addEventListener('click', function(event){
           self.clickArrowButton( this );
         });
       };
     }
     if (self.hasOwnProperty('pagerItems')) {
-      for (var i = 0; i < self.pagerItems.length; i++){
+      for (let i = 0; i < self.pagerItems.length; i++){
         self.pagerItems[i].addEventListener('click', function(event){
           self.clickPagerItem( this );
         });
       };
     }
+
+    if (self.hasOwnProperty('dotButtons')) {
+      for (let i = 0; i < self.dotButtons.length; i++){
+        self.dotButtons[i].addEventListener('click', function(event){
+          self.clickPagerItem( this );
+        });
+      };
+    }
   },
-  
+
   cloneFirstAndLastItem : function(){
     var firstSlide = this.slideListItems[0];
     var lastSlide = this.slideListItems[ this.slidesLength - 1 ];
@@ -164,6 +170,14 @@ Slider.prototype = {
   changeActiveClass: function (indx) {
     console.log(indx);
     var buttonList = this.pagerItems;
+    let dotsList = this.dotButtons;
+
+    Array.prototype.forEach.call(dotsList, (item, index) => {
+      if ((index == indx - 1) && !item.classList.contains("active"))
+        return item.classList.add("active");
+      return item.classList.remove("active");
+    })
+
     Array.prototype.forEach.call(buttonList, (item, index) => {
       if ((index == indx - 1) && !item.classList.contains("active"))
         return item.classList.add("active");
