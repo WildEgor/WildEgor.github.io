@@ -14,3 +14,7 @@
 - Mobile Version should be for screen size < 1300 px. If you have skills, than modify mobile version for screen size > 768 px;
 - All icons must be vector type. Use Figma features;
 - Load final project to Github and provide link. 
+
+# SkillFactory JS
+## VanillaJS Slider
+- Layout: https://www.figma.com/file/1kMNjrk8hZSOjc0kUwdgf8/Slider?node-id=0%3A1
