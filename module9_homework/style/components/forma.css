@@ -1,0 +1,28 @@
+.forma__button {
+    font-style: normal;
+}
+
+.forma-wrapper {
+    display: flex;
+}
+
+.forma__label {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 13px;
+    width: 100%;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+.forma__input {
+    margin-top: 8px;
+    padding-bottom: 8px;
+}
+
+.forma__warning {
+    display: none;
+    background-color: rgb(199, 199, 199);
+    color: red;
+}

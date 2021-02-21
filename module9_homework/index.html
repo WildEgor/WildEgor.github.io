@@ -4,10 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/main.css"/>
     <title>Document</title>
 </head>
 <body>
-    
+    <form id="f_form" class="forma">
+        <div class="forma-wrapper"> 
+            <label for="f_number" class="forma__label"> Enter number [0-10]:
+                <input id="f_number" class="forma__input" type="number" placeholder="Number" value='1'>
+                <span class="forma__warning"><p>Enter valid number</p></span>
+            </label>
+            <button class="forma__button button button-main"> SUBMIT </button>
+        </div>
+    </form>
+
+    <div id="imagesAutoSlider" class="slider">
+        <!-- 
+            <img src="">
+         -->
+    </div>
 </body>
 <script defer src="./tasks.js" ></script>
 </html>
