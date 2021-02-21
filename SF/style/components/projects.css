@@ -6,6 +6,7 @@
 
 .projects-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     color: #ffffff;
     padding: 120px 100px 350px 100px;
@@ -16,16 +17,20 @@
     margin-left: 50px;
 }
 
+.projects-content--wrapper {
+    display: flex;
+}
+
 .projects-content {
     width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 100px;
 }
 
-.projects-content .title {
-    padding: 0px 0px;
-    margin-top: 60px;
+.projects-content__text {
+    padding: 20px 0px 20px 0px;
 }
 
 .projects-city {
@@ -88,6 +93,7 @@
 }
 
 .scroll {
+    width: 70%;
     align-items: center;
 }
 
