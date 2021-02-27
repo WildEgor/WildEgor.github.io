@@ -26,3 +26,7 @@
     background-color: rgb(199, 199, 199);
     color: red;
 }
+
+.forma__size-button {
+    display: none;
+}

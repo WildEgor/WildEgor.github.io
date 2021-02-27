@@ -5,24 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/main.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <title>Document</title>
 </head>
 <body>
     <form id="f_form" class="forma">
         <div class="forma-wrapper"> 
-            <label for="f_number" class="forma__label"> Enter number [0-10]:
+            <label for="f_number" class="forma__label"> Enter number:
                 <input id="f_number" class="forma__input" type="number" placeholder="Number" value='1'>
                 <span class="forma__warning"><p>Enter valid number</p></span>
             </label>
+            <!-- <label for="f_size" class="forma__label"> Enter number:
+                <input id="f_size" class="forma__input" type="number" placeholder="Number" value='1'>
+                <span class="forma__warning"><p>Enter valid number</p></span>
+            </label> -->
             <button class="forma__button button button-main"> SUBMIT </button>
         </div>
     </form>
 
     <div id="mySlider"></div>
-    <div id="sliderNav">
-        <div id="sliderPrev"><img src="images/prev-btn.png"></div>
-        <div id="sliderNext"><img src="images/next-btn.png"></div>
+    <div id="sliderNav" class="slider-nav">
+        <div id="sliderPrev"><div class="slider-nav__slider-button"><i class="fas fa-arrow-circle-left"></i></div></div>
+        <div id="sliderNext"><div class="slider-nav__slider-button"><i class="fas fa-arrow-circle-right"></i></div>
     </div>
 </body>
-<script defer src="./tasks.js" ></script>
+<script defer src="./task1.js" ></script>
+<!-- <script defer src="./task2.js" ></script>
+<script defer src="./task3.js" ></script>
+<script defer src="./task4.js" ></script>
+<script defer src="./task5.js" ></script> -->
 </html>
