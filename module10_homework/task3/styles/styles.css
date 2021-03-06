@@ -1,0 +1,85 @@
+.container {
+    max-width: 500px;
+    height: auto;
+    padding: 10px;
+    position: relative;
+    margin: 0px;
+    display: grid;
+    grid-gap: 10px;
+}
+
+.input {
+    border-color: lightblue;
+    border-width: 4px;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    height: 30px;
+    border-style: solid;
+}
+.button-send {
+    grid-column: 3;
+    grid-row: 1 / span 1;
+    border-color: lightblue;
+    border-width: 4px;
+    border-style: solid;
+}
+.button-geo {
+    grid-column: 4;
+    grid-row: 1 / span 1;
+    border-color: lightblue;
+    border-width: 4px;
+    border-style: solid;
+}
+.chat{
+    border-color: lightblue;
+    border-width: 4px;
+    border-style: solid;
+    grid-column: 1 /span 4;
+    grid-row: 2;
+    min-height: 100px;
+    display: grid;
+    grid-template-rows: max-content;
+}
+.textinput{
+    width: 99%;
+    height: 28px;
+    border: none;
+}
+.textinput:focus{
+    outline: none;
+}
+.btn {
+    border: none;
+    outline: none;
+    display: flex;
+    padding-top: 9px;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    font-size: 12px;
+    background: lightblue;
+    transition: 0.3s;
+}
+.message {
+    border-color: lightblue;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 15%;
+    padding: 5px 15px;
+    height: max-content;
+    margin: 5px;
+    max-width: 250px;
+    word-break: break-all;
+}
+.sent-message{
+    justify-self: right;
+}
+
+.recieved-message{
+    justify-self: start;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 140, 255);
+}
