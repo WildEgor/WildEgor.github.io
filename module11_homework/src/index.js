@@ -1,7 +1,4 @@
-export function power(value, exp) {
-  if( exp === 1 ){
-    return value;
-  } else{
-    return value * power(value, exp - 1);
-  }
-}
+export const random = (min, max) => {
+  const rand = min + Math.random() * (max + 1 - min);
+  return Math.floor(rand);
+};

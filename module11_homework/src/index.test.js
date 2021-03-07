@@ -1,12 +1,14 @@
-import { power } from './index.js'
+import { random } from './index.js'
 
-describe('test power', () => {
-    it("positive exp", () => {
-        const result = power(2, 2)
-        expect(result).toBe(4)
-    }) //successful
-    it("negative exp", () => {
-        const result = power(2, -2)
-        expect(result).toBe(1/4)
-    }) //unsuccessful
+describe('Tests for random function', () => {
+    const minPos = 1
+    const minNeg = -1
+    const maxPos = 4
+    const maxNeg = -4
+    const value = ''
+    it('It should get random with type Number', () => {
+        expect(typeof random(minPos, maxPos)).toBe("number")
+        expect(random(minNeg, maxNeg) < 0).toBeTruthy()
+        expect(typeof random(value, value)).toBe("number")
+    })
 })
