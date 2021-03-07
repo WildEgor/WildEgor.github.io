@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/main.css" />
+    <title>Document</title>
+</head>
+<body>
+    <section id="projects" class="projects">
+        <div class="container projects-container">
+            <div class="projects-content--wrapper">
+                <div class="projects-content">
+                    <h2 class="projects-content__title title accent-color"> Completed </br>projects </h2>
+                    <p class="projects-content__text second-color">
+                        Only a small part of the work performed by our company is presented </br>on the site. For 14 years on in the construction </br> 
+                        market we have made happy more than 1000 families
+                    </p>
+                    <div class="project-slider">
+                        <div class="project-slider__navigation">
+                            <div class="project-slider__button accent-color-bg">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                            <div class="project-slider__button accent-color-bg">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="categorySliderContent" class="projects-city">
+                        <div class="projects-city__item js-content-item">
+                            <h4 class="projects-city__subtitle accent-color"> City: </h4>
+                            <span data-slider-content-index="0"> Rostov-on-Don</br>LCD admiral </span>
+                            <span data-slider-content-index="1"> SOCHI </br>THIEVES </span>
+                            <span data-slider-content-index="2"> ROSTOV-ON-DON </br>PATRIOTIC </span>
+                        </div>
+                        <div class="projects-city__item js-content-item">
+                            <h4 class="projects-city__subtitle accent-color"> Apartment area: </h4>
+                            <span data-slider-content-index="0"> 81 m2 </span>
+                            <span data-slider-content-index="1"> 105 m2 </span>
+                            <span data-slider-content-index="2"> 93 m2 </span>
+                        </div>
+                        <div class="projects-city__item js-content-item">
+                            <h4 class="projects-city__subtitle accent-color"> Repair time: </h4>
+                            <span data-slider-content-index="0"> 3.5 months </span>
+                            <span data-slider-content-index="1"> 4 months </span>
+                            <span data-slider-content-index="2"> 3 months </span>
+                        </div>
+                        <div class="projects-city__item js-content-item">
+                            <h4 class="projects-city__subtitle accent-color"> Repair Cost: </h4>
+                            <span data-slider-content-index="0"> Upon request </span>
+                            <span data-slider-content-index="1"> Upon request </span>
+                            <span data-slider-content-index="2"> Upon request </span>
+                        </div>
+                    </div>
+
+                    <div id="categorySliderScroll" class="scroll slider__controls js-slider-buttonscontrols">
+                        <button type="button" data-direction="prev" class="js-arrow-button slider__button slider__button--prev "><span class="arrow leftArrow"></span></button>
+                        <ul class="scroll__dots">
+                            <li><button class="scroll__dot scroll__dot-active js-dot-buttons" data-slide-index="0"></button></li>
+                            <li><button class="scroll__dot js-dot-buttons" data-slide-index="1"></button></li>
+                            <li><button class="scroll__dot js-dot-buttons" data-slide-index="2"></button></li>
+                        </ul>
+                        <button type="button" data-direction="next" class="js-arrow-button slider__button slider__button--next"><span class="arrow rightArrow"></span></button>
+                    </div> 
+                </div>
+                <div class="projects-preview js-slider-pagercontrols">       
+                    <div id="categorySliderPager" class="slider__controls js-slider-pagercontrols">
+                        <ul class="projects-navigation slider-pager">
+                            <li class="projects-navigation__item"><button class="projects-navigation__link js-pager-item" type="button" data-slide-index="0"> ROSTOV-ON-DON, ADMIRAL </button></li>
+                            <li class="projects-navigation__item"><button class="projects-navigation__link js-pager-item" type="button" data-slide-index="1"> SOCHI THIEVES </button></li>
+                            <li class="projects-navigation__item"><button class="projects-navigation__link js-pager-item" type="button" data-slide-index="2"> ROSTOV-ON-DON PATRIOTIC </button></li>
+                        </ul>
+                    </div>
+                    <div id="categorySlider" class="slider">
+                        <div class="slider__viewport">
+                            <ul class="slider__slides slide-list js-slide-list" style ="left: -100%"> 
+                                <li class="slide-list__item js-slide-list-item" data-slide-index="0">
+                                    <div class="slide-list__wrapper">
+                                        <img class="slide-list__image" src="./img/slider1.png">
+                                    </div>
+                                </li>
+                                <li class="slide-list__item js-slide-list-item" data-slide-index="1">
+                                    <div class="slide-list__wrapper">
+                                        <img class="slide-list__image" src="./img/slider2.png">
+                                    </div>
+                                </li>
+                                <li class="slide-list__item js-slide-list-item" data-slide-index="2">
+                                    <div class="slide-list__wrapper">
+                                        <img class="slide-list__image" src="./img/slider3.png">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <script defer type="module" src="./js/index.js"></script>
+</body>
+</html>
